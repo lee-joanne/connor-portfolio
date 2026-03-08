@@ -1,18 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Outfit:wght@100..900&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* base styles  */
-body {
+body,
+a {
   background-color: black;
+  color: white !important;
 }
 
 h1,
 h2,
 h3,
-h4,
+.hero-quote {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p,
 a {
-  color: white !important;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -50,7 +56,22 @@ a:hover {
   border-radius: 100px;
 }
 
+/* hero section  */
+
+.hero-textsection {
+  letter-spacing: 20%;
+  text-align: right;
+}
+
+.hero-textsection h3 {
+  color: #dbaa00;
+}
+
+.hero-quote {
+  font-style: italic;
+}
 /* Animate on toggle */
+
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }
@@ -128,7 +149,7 @@ a:visited {
 }
 
 #simp {
-  max-width: 600px;
+  max-width: 400px;
   font-size: 14px;
   text-align: initial;
   line-height: initial;
