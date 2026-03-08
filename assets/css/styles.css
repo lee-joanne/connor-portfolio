@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+/* base styles  */
 body {
   background-color: black;
 }
@@ -21,13 +22,52 @@ a:hover {
   color: #dbaa00 !important;
 }
 
-/* Default navbar */
+.activelink {
+  color: #dbaa00 !important;
+}
+
+/* navbar */
+
+#nav {
+  margin-bottom: 10rem;
+}
+
+.hamburger {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #dbaa00;
+  transition: all 0.3s ease;
+  border-radius: 100px;
+}
+
+/* Animate on toggle */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
 #mainNav {
-  background: transparent;
+  background: black;
   transition: background-color 0.3s ease;
 }
 
-/* Navbar after scrolling */
 #mainNav.scrolled {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -37,7 +77,7 @@ a:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Audio player  */
+/* audio player  */
 
 *,
 *:before,
@@ -95,7 +135,7 @@ a:visited {
   background: #17212b;
   color: #ddd;
   margin: 0 auto;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
 }
 

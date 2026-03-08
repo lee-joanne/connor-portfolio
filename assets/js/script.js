@@ -1,9 +1,3 @@
-/*
-
-Example: https://www.codehim.com/demo/javascript-audio-player-with-playlist/
-
-*/
-
 const navbar = document.getElementById("mainNav");
 
 window.addEventListener("scroll", function () {
@@ -14,7 +8,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Multiple events to a listener
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+});
+
+// audio player
 
 function addEventListener_multi(element, eventNames, handler) {
   var events = eventNames.split(" ");
@@ -208,7 +208,7 @@ function simp_setAlbum(index) {
   simp_cover.innerHTML = simp_a_url[index].dataset.cover
     ? '<div style="background:url(' +
       simp_a_url[index].dataset.cover +
-      ') no-repeat;background-size:cover;width:80px;height:80px;"></div>'
+      ') no-repeat;background-size:cover;width:80px;height:80px; border-radius:10px;"></div>'
     : '<i class="fa fa-music fa-5x"></i>';
 
   simp_title.innerHTML =
