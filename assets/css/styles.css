@@ -59,7 +59,7 @@ a:hover {
   justify-content: center;
   gap: 4rem;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero-img {
@@ -137,7 +137,7 @@ a:hover {
 /* about  */
 
 #about {
-  height: 90vh;
+  height: 100vh;
 }
 
 #about h1,
@@ -145,6 +145,10 @@ a:hover {
   text-align: center;
   letter-spacing: 15%;
   font-family: "Abel";
+}
+
+#about h4 {
+  font-size: 20px;
 }
 
 #about .about-text {
