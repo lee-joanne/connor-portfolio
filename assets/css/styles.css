@@ -56,21 +56,46 @@ a:hover {
 #home {
   display: flex;
   justify-content: center;
-  gap: 4rem;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
 }
 
+.typing {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid currentColor;
+  width: 0;
+  animation:
+    typing 2.5s steps(18, end) forwards,
+    blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .hero-img {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-  justify-content: end;
+  text-align: center;
 }
 
 .hero-textsection {
   letter-spacing: 20%;
-  text-align: right;
+  text-align: center;
 }
 
 .hero-textsection h3 {
@@ -80,21 +105,12 @@ a:hover {
 .hero-quote {
   font-style: italic;
   letter-spacing: 5%;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 867px) {
-  #home {
-    flex-direction: column;
-    margin-top: 10vh;
-    gap: 2rem;
-  }
-  #home h3,
-  #home h1 {
-    text-align: center;
-  }
-  .hero-img {
-    justify-content: center;
-    margin-top: 2rem;
+  .typing {
+    font-size: 2rem;
   }
   .simple-audio-player {
     margin-inline: 20px !important;
@@ -299,7 +315,7 @@ a:visited {
 }
 
 #simp {
-  max-width: 400px;
+  max-width: 750px;
   font-size: 14px;
   text-align: initial;
   line-height: initial;
