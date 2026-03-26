@@ -170,7 +170,7 @@ a:hover {
 #contact h1 {
   text-align: center;
   letter-spacing: 15%;
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
 }
 
 #about h4 {
@@ -262,11 +262,11 @@ a:hover {
 .resume-btn,
 .resume-download a {
   text-align: center;
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
 }
 
 .resume-btn .btn {
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
 }
 
 .resume-btn .btn,
@@ -302,7 +302,7 @@ a:hover {
   border-radius: 100px;
   letter-spacing: 10%;
   color: black;
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
   font-size: 14px;
   padding: 14px 20px;
   width: 200px;
