@@ -168,13 +168,15 @@ a:hover {
 
 #about h1,
 #about h4,
+#contact h4,
 #contact h1 {
   text-align: center;
   letter-spacing: 15%;
   font-family: "Abel", sans-serif;
 }
 
-#about h4 {
+#about h4,
+#contact h4 {
   font-size: 20px;
 }
 
@@ -298,6 +300,10 @@ a:hover {
   padding-top: 40px;
 }
 
+.jones-logo {
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .resume-download a {
     margin-top: 8px;
@@ -337,7 +343,7 @@ a:hover {
 
 #contact,
 #about {
-  min-height: 84vh;
+  min-height: 82vh;
 }
 
 #contact {
